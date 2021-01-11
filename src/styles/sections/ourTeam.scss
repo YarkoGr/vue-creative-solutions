@@ -23,16 +23,15 @@
         border-right: 15px solid $bg-light-grey;
         border-left: 15px solid $bg-light-grey;
     }
-    &__carousel-card-img-wrapper {
-        @include padding-hack(72.3%, cover);
-        bottom: -160px;
-        img {
-            margin: 0 auto;
-            border: 10px solid $bg-light-grey;
-            border-radius: 50%;
-            max-width: 242px;
-        }
+    &__carousel-card-img {
+        position: relative;
+        bottom: -162px;
+        margin: 0 auto;
+        border: 10px solid $bg-light-grey;
+        border-radius: 50%;
+        max-width: 242px;
         margin-bottom: 48px;
+        z-index: 1;
     }
     &__carousel-card-subscribe {
         background-color: $white;

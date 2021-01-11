@@ -48,7 +48,7 @@ export default {
 </script>
 <style lang="scss">
 .social-icons {
-  @include flex(center, center);
+  @include flex(center, center, row, wrap);
   &__item:not(:last-child) {
     margin-right: 24px;
   }

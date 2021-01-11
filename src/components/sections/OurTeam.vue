@@ -13,9 +13,12 @@
           v-for="(item, idx) in cards"
           :key="idx"
         >
-          <div class="our-team__carousel-card-img-wrapper">
-            <img :src="item.img" :alt="`${item.title}-photo`" />
-          </div>
+          <img
+            class="our-team__carousel-card-img"
+            :src="item.img"
+            :alt="`${item.title}-photo`"
+          />
+
           <div class="our-team__carousel-card-subscribe">
             <h3 class="our-team__carousel-card-title">{{ item.title }}</h3>
             <span class="our-team__carousel-card-subtitle">{{
@@ -93,7 +96,7 @@ export default {
           subtitle: "Designer",
         },
         {
-          img: "https://picsum.photos/926/695?random=2",
+          img: "https://picsum.photos/222/222?random=2",
           title: "Yarik Pasko",
           subtitle: "Front End Developer",
         },

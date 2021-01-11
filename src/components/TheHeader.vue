@@ -1,5 +1,5 @@
 <template>
-  <div class="the-header">
+  <div class="the-header" :class="{ toScroll: handleScroll > 0 }">
     <a href="/"
       ><img class="the-header__img" src="../assets/svg/Logo.svg" alt="logo"
     /></a>
@@ -25,6 +25,7 @@ export default {
   name: "TheHeader",
   data() {
     return {
+      handleScroll: 0,
       menuItems: [
         {
           name: "Home",
@@ -48,6 +49,17 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScrollBar);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScrollBar);
+  },
+  methods: {
+    handleScrollBar() {
+      this.handleScroll = window.scrollY;
+    },
   },
 };
 </script>
@@ -79,5 +91,9 @@ export default {
   .bm-menu {
     z-index: 20;
   }
+}
+.toScroll {
+  background: $card-subtitle;
+  z-index: 20;
 }
 </style>

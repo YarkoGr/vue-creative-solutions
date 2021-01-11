@@ -30,6 +30,10 @@ export default {
     TheFooter,
   },
 };
+window.scrollTo({
+  top: 1000,
+  behavior: "smooth",
+});
 </script>
 
 <style lang="scss">
