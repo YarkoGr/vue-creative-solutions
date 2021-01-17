@@ -14,6 +14,7 @@
 </template>
 <script>
 import { Slide } from "vue-burger-menu";
+import { menuData } from "../data";
 export default {
   name: "BurgerMenu",
   components: {
@@ -21,28 +22,7 @@ export default {
   },
   data() {
     return {
-      menuItems: [
-        {
-          name: "Home",
-          href: "/",
-        },
-        {
-          name: "About",
-          href: "#about",
-        },
-        {
-          name: "Services",
-          href: "#services",
-        },
-        {
-          name: "Works",
-          href: "#works",
-        },
-        {
-          name: "Contact",
-          href: "#contact",
-        },
-      ],
+      menuItems: menuData,
     };
   },
 };

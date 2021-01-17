@@ -59,7 +59,8 @@ export default {
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              dots: false,
+              dots: true,
+              arrows: false,
             },
           },
           {
@@ -68,6 +69,8 @@ export default {
               slidesToShow: 2,
               slidesToScroll: 2,
               initialSlide: 2,
+              dots: true,
+              arrows: false,
             },
           },
           {
@@ -75,6 +78,8 @@ export default {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              dots: true,
+              arrows: false,
             },
           },
         ],

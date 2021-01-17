@@ -31,6 +31,17 @@ export default {
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 530,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false,
+            },
+          },
+        ],
       },
       images: [
         {

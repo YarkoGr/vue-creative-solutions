@@ -49,8 +49,12 @@ export default {
 <style lang="scss">
 .social-icons {
   @include flex(center, center, row, wrap);
-  &__item:not(:last-child) {
-    margin-right: 24px;
+
+  &__item {
+    min-width: calc(100% / 5 - 5px);
+    @media screen and (max-width: 768px) {
+      min-width: calc(100% / 3 - 5px);
+    }
   }
 }
 </style>

@@ -17,6 +17,9 @@
     &__carousel {
         width: 80%;
     }
+    .slick-dots {
+        bottom: -40px;
+    }
     &__carousel-card {
         text-align: center;
         position: relative;
@@ -32,10 +35,21 @@
         max-width: 242px;
         margin-bottom: 48px;
         z-index: 1;
+        @media screen and (max-width: 1024px) {
+            max-width: 180px;
+            bottom: -140px;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 130px;
+            bottom: -115px;
+        }
     }
     &__carousel-card-subscribe {
         background-color: $white;
         padding: 164px 0 50px;
+        @media screen and (max-width: 768px) {
+            padding: 84px 0 50px;
+        }
     }
     &__carousel-card-title {
         @include text($h24, 700, $main-color);

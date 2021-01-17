@@ -19,35 +19,15 @@
 </template>
 
 <script>
-import BurgerMenu from "./sections/BurgerMenu.vue";
+import BurgerMenu from "./BurgerMenu.vue";
+import { menuData } from "../data";
 export default {
   components: { BurgerMenu },
   name: "TheHeader",
   data() {
     return {
       handleScroll: 0,
-      menuItems: [
-        {
-          name: "Home",
-          href: "/",
-        },
-        {
-          name: "About",
-          href: "#about",
-        },
-        {
-          name: "Services",
-          href: "#services",
-        },
-        {
-          name: "Works",
-          href: "#works",
-        },
-        {
-          name: "Contact",
-          href: "#contact",
-        },
-      ],
+      menuItems: menuData,
     };
   },
   created() {
@@ -72,6 +52,29 @@ export default {
     @include flex(center, center);
     @media screen and (max-width: 730px) {
       display: none;
+    }
+  }
+  &__list-item {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      background: $main-color;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: 0.8;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+    &:hover {
+      &:after {
+        left: 120%;
+        transition: all 1550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
     }
   }
   &__list-item:not(:last-child) {
