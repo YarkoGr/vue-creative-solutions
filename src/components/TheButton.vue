@@ -28,7 +28,7 @@ export default {
     background: rgba(83, 80, 112, 0.5);
     position: absolute;
     width: 100%;
-    height: 5px;
+    height: 2px;
     bottom: 0;
     left: 0;
     border-radius: 2px;
@@ -44,14 +44,14 @@ export default {
   @keyframes hover-v {
     0% {
       transform: scaleX(0);
-      height: 5px;
+      height: 2px;
     }
     45% {
       transform: scaleX(1);
-      height: 5px;
+      height: 2px;
     }
     55% {
-      height: 5px;
+      height: 2px;
     }
     100% {
       transform: scaleX(1);
@@ -62,58 +62,58 @@ export default {
     0% {
       transform: scaleX(0);
       -webkit-transform: scale(0);
-      height: 5px;
+      height: 2px;
     }
     45% {
       transform: scaleX(1);
-      height: 5px;
+      height: 2px;
     }
     55% {
-      height: 5px;
+      height: 2px;
     }
     100% {
       transform: scaleX(1);
-      height: 100%;
+      height: 50px;
     }
   }
 
   @keyframes no-hover-v {
     0% {
       transform: scaleX(1);
-      height: 51px;
+      height: 50px;
     }
     45% {
-      height: 5px;
+      height: 2px;
     }
     55% {
       transform: scaleX(1);
-      height: 5px;
+      height: 2px;
       opacity: 1;
     }
 
     100% {
       transform: scaleX(0);
-      height: 5px;
+      height: 2px;
       opacity: 0.02;
     }
   }
   @-webkit-keyframes no-hover-v {
     0% {
       transform: scaleX(1);
-      height: 55px;
+      height: 50px;
     }
     45% {
-      height: 5px;
+      height: 2px;
     }
     55% {
       transform: scaleX(1);
-      height: 5px;
+      height: 2px;
       opacity: 1;
     }
 
     100% {
       transform: scaleX(0);
-      height: 5px;
+      height: 2px;
       opacity: 0.02;
     }
   }
