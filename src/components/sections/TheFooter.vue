@@ -23,6 +23,20 @@ export default {
   background-color: $main-color;
   &__wrapper {
     @include flex(space-between, center);
+    @media screen and (max-width: 425px) {
+      @include flex(center, center, column);
+    }
+  }
+  &__text {
+    @media screen and (max-width: 425px) {
+      margin-bottom: 20px;
+    }
+  }
+  .social-icons {
+    min-width: 300px;
+    @media screen and (max-width: 556px) {
+      width: 100%;
+    }
   }
 }
 </style>

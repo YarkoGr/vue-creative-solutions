@@ -28,7 +28,7 @@
           <span class="the-contact__slide-button-text">{{ item.text }}</span>
         </div>
       </div>
-      <form class="the-contact__form">
+      <form class="the-contact__form container">
         <div class="the-contact__form-wrapper">
           <div class="the-contact__form-inputs">
             <input type="text" name="name" placeholder="Name *" required />

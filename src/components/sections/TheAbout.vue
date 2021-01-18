@@ -36,34 +36,5 @@ export default {
 </script>
 
 <style lang="scss">
-.the-about {
-  @include flex();
-  padding: 124px 0;
-  &__title-wrapper {
-    padding-top: 76px;
-    text-align: center;
-    min-width: 34%;
-    min-height: 557px;
-    background: linear-gradient($first-screen-bg, $first-screen-bg),
-      url("../../assets/bg-about.png") no-repeat;
-    background-size: cover;
-    background-position: -63px 0;
-  }
-  &__img {
-    margin-bottom: 44px;
-  }
-  &__title-wrapper {
-    @include text($h46);
-  }
-  &__description {
-    @include flex(start, center, column);
-    padding: 79px 34px 0 124px;
-    span {
-      margin-bottom: 20px;
-    }
-    span:last-of-type {
-      margin-bottom: 70px;
-    }
-  }
-}
+@import "../../styles/sections/theAbout.scss";
 </style>

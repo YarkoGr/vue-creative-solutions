@@ -24,30 +24,5 @@ export default {
 </script>
 
 <style lang="scss">
-.first-screen {
-  min-height: 100vh;
-  @include flex(center, center);
-  background: linear-gradient($first-screen-bg, $first-screen-bg),
-    url("../../assets/bg-first-screen.png") no-repeat center center;
-  background-size: cover;
-  flex: 1;
-  &__header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-  &__content {
-    text-align: center;
-  }
-  &__title {
-    @include text($h72, 700);
-    text-transform: uppercase;
-    margin-bottom: 39px;
-  }
-  &__subtitle {
-    @include text($h30, 300);
-    font-style: italic;
-  }
-}
+@import "../../styles/sections/firstScreen.scss";
 </style>

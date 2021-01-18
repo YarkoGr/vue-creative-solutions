@@ -55,6 +55,9 @@ export default {
     @media screen and (max-width: 768px) {
       min-width: calc(100% / 3 - 5px);
     }
+    @media screen and (max-width: 425px) {
+      min-width: calc(100% / 5 - 5px);
+    }
   }
 }
 </style>

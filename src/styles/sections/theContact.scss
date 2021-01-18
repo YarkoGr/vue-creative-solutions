@@ -74,9 +74,19 @@
             margin-bottom: 26px;
             background-color: $bg-light-grey-opaciti;
             outline: none;
+            @media screen and (max-width: 900px) {
+                @include flex(center, center, column);
+            }
+            @media screen and (max-width: 600px) {
+                @include flex(center, center, column);
+                min-width: 100%;
+            }
         }
         input:not(:last-child) {
             margin-right: 31px;
+            @media screen and (max-width: 900px) {
+                margin-right: 0;
+            }
         }
         textarea {
             width: 100%;
